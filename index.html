@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PCraft</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <script src="social.js"></script>
+</head>
+<body>
+    <img src="bgImage.jpg">
+    <div class="mainDiv">
+        <div class="container">
+            <div class="row" id="header">
+                <div class="col-xs-4" id="headerCol1">
+                    <a class="logoLink" href="index.html"><img class="logo" src="logo.png" width="auto" height="100%"></a>
+                    <a class="titleLink" href="index.html"><span class="title"><span class="titleGray">P</span><span class="titleWhite">C</span><span class="titleGray">raft</span></span></a>
+                </div>
+                <div class="col-xs-4" id="headerCol2"></div>
+                <div class="col-xs-4" id="headerCol3">
+                    <button id="toLoginLink"><a href="login.html">Log In / Register</a></button>&nbsp;
+                </div>
+            </div>
+            <br>
+            <div class="row" id="navLinks">
+                <a href="index.html">Home</a>
+            </div>
+            <br>
+            <div class="row" id="navigation">
+                <div class="col-xs-3" id="navigationCol1">
+                    <div class="navBar">
+                        <ul class="navUl">
+                            <li class="navLi"><span class="navHead">Components&nbsp;&nbsp;<i class="glyphicon glyphicon-menu-down"></i></span></li>
+                            <li class="navLi"><button class="navLink" onclick="soon()">CPU</button></li>
+                            <li class="navLi"><button class="navLink" onclick="soon()">Motherboards</button></li>
+                            <li class="navLi"><button class="navLink" onclick="soon()">Memory</button></li>
+                            <li class="navLi"><button class="navLink" onclick="soon()">Video Graphic Devices</button></li>
+                            <li class="navLi"><button class="navLink" onclick="soon()">HDD</button></li>
+                            <li class="navLi"><button class="navLink" onclick="soon()">SSD</button></li>
+                            <li class="navLi"><button class="navLink" onclick="soon()">Power Supplies</button></li>
+                            <li class="navLi"><button class="navLink" onclick="soon()">Cases</button></li>
+                            <li class="navLi"><button class="navLink" onclick="soon()">PC Cooling</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-9" id="navigationCol2">
+                    <div class="weWorkTitle">How we are working</div>
+                    <div class="weWorkContent">
+                        <a href="delivery.html"><div class="weWork1, weWork">
+                            <img src="deliveryIcon.png" alt="delivery" width="100%" height="auto">
+                            <div>Door Delivery</div>
+                        </div></a>
+                        <a href="payment.html"><div class="weWork2, weWork">
+                            <img src="paymentIcon.png" alt="payment" width="100%" height="auto">
+                            <div>Payment on Receive</div>
+                        </div></a>
+                        <a href="support.html"><div class="weWork3, weWork">
+                            <img src="supportIcon.png" alt="support" width="100%" height="auto">
+                            <div>Support 7 days a week</div>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row" id="quickBuild">
+                <div class="col-xs-12">
+                    <div class="row" id="quickBuildTitle">
+                        Quick Craft
+                        <span>
+                            Here you can choose filling for your PC and see the total price of them
+                        </span>
+                    </div>
+                    <div class="row" id="quickBuildContent">
+                        <div class="col-xs-4">
+                            <div class="cpuQB, QB">
+                                <img id="imgCPU" src="cpuQBimage.jpg" height="100%" width="auto">
+                                <div id="QBcpu">
+                                    <ul class="QBul">
+                                        <li class="QBli"><button onclick="intelCPU()">Intel CPUs</button></li>
+                                        <li class="QBli"><button onclick="amdCPU()">AMD CPUs</button></li>
+                                        <li class="QBli"><button onclick="bestCPU()">Bestsellers</button></li>
+                                        <li class="QBli"><button onclick="noneCPU()">None</button></li>
+                                    </ul>
+                                </div>
+                                <div id="intelCPU" class="qb">
+                                    <button onclick="intelCPUset(0)">Intel Core i9-9900K</button>
+                                    <button onclick="intelCPUset(1)">Intel Core i9-9940X</button>
+                                    <button onclick="intelCPUset(2)">Intel Core i7-9700K</button>
+                                    <button onclick="intelCPUset(3)">Intel Core i7-6700K</button>
+                                    <button onclick="intelCPUset(4)">Intel Core i5-9600K</button>
+                                    <button onclick="intelCPUset(5)">Intel Core i5-8400</button>
+                                    <button onclick="intelCPUset(6)">Intel Core i5-9400F</button>
+                                    <button onclick="intelCPUset(7)">Intel Core I3-9350KF</button>
+                                    <button onclick="intelCPUset(8)">Intel Core i3-9100F</button>                             
+                                </div>
+                                <div id="amdCPU" class="qb">
+                                    <button onclick="amdCPUset(0)">AMD Ryzen 9 3950X</button>
+                                    <button onclick="amdCPUset(1)">AMD RYZEN 9 3900X</button>
+                                    <button onclick="amdCPUset(2)">AMD RYZEN 7 3800X</button>
+                                    <button onclick="amdCPUset(3)">AMD RYZEN 7 3700X</button>
+                                    <button onclick="amdCPUset(4)">AMD RYZEN 7 1700</button>
+                                    <button onclick="amdCPUset(5)">AMD RYZEN 5 3600X</button>
+                                    <button onclick="amdCPUset(6)">AMD RYZEN 5 3400G</button>                                        
+                                    <button onclick="amdCPUset(7)">AMD RYZEN 5 2600</button>
+                                    <button onclick="amdCPUset(8)">AMD RYZEN 5 1600</button>
+                                </div>
+                                <div id="bestCPU" class="qb">
+                                    <button onclick="intelCPUset(0)">Intel Core i9-9900K</button>
+                                    <button onclick="amdCPUset(0)">AMD Ryzen 9 3950X</button>
+                                    <button onclick="intelCPUset(2)">Intel Core i7-9700K</button>
+                                    <button onclick="amdCPUset(1)">AMD RYZEN 9 3900X</button>
+                                    <button onclick="intelCPUset(4)">Intel Core i5-9600K</button>
+                                    <button onclick="amdCPUset(2)">AMD RYZEN 7 3800X</button>                                        
+                                    <button onclick="intelCPUset(5)">Intel Core i5-8400</button>
+                                    <button onclick="amdCPUset(3)">AMD RYZEN 7 3700X</button>
+                                    <button onclick="amdCPUset(5)">AMD RYZEN 5 3600X</button>
+                                </div>
+                                <div id="noneCPU" class="none">CPU : none</div>
+                            </div>
+                            <div class="graphicQB, QB">
+                                <img id="imgGRAPHIC" src="graphicQBimage.jpg" height="100%" width="auto">
+                                <div id="QBgraphic">
+                                    <ul class="QBul">
+                                        <li class="QBli"><button onclick="nvidiaGRAPHIC()">NVIDIA Graphic Cards</button></li>
+                                        <li class="QBli"><button onclick="amdGRAPHIC()">AMD Graphic Cards</button></li>
+                                        <li class="QBli"><button onclick="bestGRAPHIC()">Bestsellers</button></li>
+                                        <li class="QBli"><button onclick="noneGRAPHIC()">None</button></li>
+                                    </ul>
+                                </div>
+                                <div id="nvidiaGRAPHIC" class="qb">
+                                    <button onclick="nvidiaGRAPHICset(0)">ASUS GeForce RTX 2080 Ti</button>
+                                    <button onclick="nvidiaGRAPHICset(1)">EVGA GeForce RTX 2070 SUPER</button>
+                                    <button onclick="nvidiaGRAPHICset(2)">MSI GeForce RTX 2080 Ti</button>
+                                    <button onclick="nvidiaGRAPHICset(3)">GIGABYTE GeForce RTX 2070 Super</button>
+                                    <button onclick="nvidiaGRAPHICset(4)">EVGA GeForce RTX 2080 SUPER</button>
+                                    <button onclick="nvidiaGRAPHICset(5)">EVGA GeForce RTX 2060 SUPER</button>
+                                    <button onclick="nvidiaGRAPHICset(6)">Intel Core i5-9400F</button>
+                                    <button onclick="nvidiaGRAPHICset(7)">ZOTAC GAMING GeForce GTX 1660</button>
+                                    <button onclick="nvidiaGRAPHICset(8)">MSI GeForce RTX 2070 SUPER</button>                             
+                                </div>
+                                <div id="amdGRAPHIC" class="qb">
+                                    <button onclick="amdGRAPHICset(0)">GIGABYTE Radeon RX 5700 XT</button>
+                                    <button onclick="amdGRAPHICset(1)">MSI Radeon RX 5700</button>
+                                    <button onclick="amdGRAPHICset(2)">PowerColor Radeon RX 5700 XT</button>
+                                    <button onclick="amdGRAPHICset(3)">XFX Radeon VII</button>
+                                    <button onclick="amdGRAPHICset(4)">XFX Radeon RX 570</button>
+                                    <button onclick="amdGRAPHICset(5)">ASRock Radeon RX 570</button>
+                                    <button onclick="amdGRAPHICset(6)">ASRock Radeon RX 5700 XT</button>                                        
+                                    <button onclick="amdGRAPHICset(7)">XFX RADEON RX 590</button>
+                                    <button onclick="amdGRAPHICset(8)">SAPPHIRE Radeon RX 5700 XT</button>
+                                </div>
+                                <div id="bestGRAPHIC" class="qb">
+                                    <button onclick="nvidiaGRAPHICset(0)">ASUS GeForce RTX 2080 Ti</button>
+                                    <button onclick="amdGRAPHICset(0)">GIGABYTE Radeon RX 5700 XT</button>
+                                    <button onclick="nvidiaGRAPHICset(1)">EVGA GeForce RTX 2070 SUPER</button>
+                                    <button onclick="amdGRAPHICset(1)">MSI Radeon RX 5700</button>
+                                    <button onclick="nvidiaGRAPHICset(2)">MSI GeForce RTX 2080 Ti</button>
+                                    <button onclick="amdGRAPHICset(2)">PowerColor Radeon RX 5700 XT</button>                                        
+                                    <button onclick="nvidiaGRAPHICset(3)">GIGABYTE GeForce RTX 2070 Super</button>
+                                    <button onclick="amdGRAPHICset(3)">XFX Radeon VII</button>
+                                    <button onclick="nvidiaGRAPHICset(4)">EVGA GeForce RTX 2080 SUPER</button>
+                                </div>
+                                <div id="noneGRAPHIC" class="none">GRAPHIC : none</div>
+                            </div>
+                            <div class="powerQB, QB">
+                                <img id="imgPOWER" src="powerQBimage.jpg" height="100%" width="auto">
+                                <div id="QBpower">
+                                    <ul class="QBul">
+                                        <li class="QBli"><button onclick="p600()">Below 600W</button></li>
+                                        <li class="QBli"><button onclick="p799()">600W to 799W</button></li>
+                                        <li class="QBli"><button onclick="p800()">800W & Above</button></li>
+                                        <li class="QBli"><button onclick="bestPOWER()">Bestsellers</button></li>
+                                        <li class="QBli"><button onclick="nonePOWER()">None</button></li>
+                                    </ul>
+                                </div>
+                                <div id="p600" class="qb">
+                                    <button onclick="p600set(0)">CORSAIR CX 450W</button>
+                                    <button onclick="p600set(1)">EVGA BR 450W</button>
+                                    <button onclick="p600set(2)">CORSAIR CV 550W</button>
+                                    <button onclick="p600set(3)">CORSAIR RMx 550W</button>
+                                    <button onclick="p600set(4)">CORSAIR CX-M 550W</button>
+                                    <button onclick="p600set(5)">CORSAIR VS 550W</button>
+                                    <button onclick="p600set(6)">RAIDMAX XT 500W</button>
+                                    <button onclick="p600set(7)">CORSAIR TX-M 550W</button>
+                                    <button onclick="p600set(8)">CORSAIR CX-M 450W</button>                             
+                                </div>
+                                <div id="p799" class="qb">
+                                    <button onclick="p799set(0)">EVGA GA 650W</button>
+                                    <button onclick="p799set(1)">CORSAIR CV 650W</button>
+                                    <button onclick="p799set(2)">CORSAIR RMx 750W</button>
+                                    <button onclick="p799set(3)">CORSAIR RMx 650W</button>
+                                    <button onclick="p799set(4)">Seasonic PX 750W</button>
+                                    <button onclick="p799set(5)">Thermaltake RGB 600W</button>
+                                    <button onclick="p799set(6)">Thermaltake RGB 750W</button>                                        
+                                    <button onclick="p799set(7)">EVGA GA 750W</button>
+                                    <button onclick="p799set(8)">EVGA BQ 600W</button>
+                                </div>
+                                <div id="p800" class="qb">
+                                    <button onclick="p800set(0)">CORSAIR RMx 850W</button>
+                                    <button onclick="p800set(1)">Rosewill 1600W</button>
+                                    <button onclick="p800set(2)">EVGA G5 850W</button>
+                                    <button onclick="p800set(3)">Thermaltake RGB 850W</button>
+                                    <button onclick="p800set(4)">EVGA G2 850W</button>
+                                    <button onclick="p800set(5)">EVGA G5 1000W</button>
+                                    <button onclick="p800set(6)">CORSAIR RMx 850W</button>                                        
+                                    <button onclick="p800set(7)">EVGA GA 850W</button>
+                                    <button onclick="p800set(8)">Seasonic GX 850W</button>
+                                </div>
+                                <div id="bestPOWER" class="qb">
+                                    <button onclick="p600set(0)">CORSAIR CX 450W</button>
+                                    <button onclick="p799set(0)">EVGA GA 650W</button>
+                                    <button onclick="p800set(0)">CORSAIR RMx 850W</button>
+                                    <button onclick="p600set(1)">EVGA BR 450W</button>
+                                    <button onclick="p799set(1)">CORSAIR CV 650W</button>
+                                    <button onclick="p800set(1)">Rosewill 1600W</button>                                        
+                                    <button onclick="p600set(2)">CORSAIR CV 550W</button>
+                                    <button onclick="p799set(2)">CORSAIR RMx 750W</button>
+                                    <button onclick="p800set(2)">EVGA G5 850W</button>
+                                </div>
+                                <div id="nonePOWER" class="none">POWER : none</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="motherQB, QB">
+                                <img id="imgMOTHER" src="motherQBimage.jpg" height="100%" width="auto">
+                                <div id="QBmother">
+                                    <ul class="QBul">
+                                        <li class="QBli"><button onclick="intelMOTHER()">Intel Motherboards</button></li>
+                                        <li class="QBli"><button onclick="amdMOTHER()">AMD Motherboards</button></li>
+                                        <li class="QBli"><button onclick="bestMOTHER()">Bestsellers</button></li>
+                                        <li class="QBli"><button onclick="noneMOTHER()">None</button></li>
+                                    </ul>
+                                </div>
+                                <div id="intelMOTHER" class="qb">
+                                    <button onclick="intelMOTHERset(0)">GIGABYTE Z390 AORUS PRO WIFI LGA Intel</button>
+                                    <button onclick="intelMOTHERset(1)">ASUS Prime Z390-A LGA Intel</button>
+                                    <button onclick="intelMOTHERset(2)">ASUS ROG Strix Z390-E Gaming LGA Intel</button>
+                                    <button onclick="intelMOTHERset(3)">ASRock B365M Pro4 LGA Intel</button>
+                                    <button onclick="intelMOTHERset(4)">MSI PRO Z390-A PRO LGA Intel</button>
+                                    <button onclick="intelMOTHERset(5)">ASUS ROG Wi-Fi Z390 LGA Intel</button>
+                                    <button onclick="intelMOTHERset(6)">GIGABYTE Z390 AORUS MASTER LGA Intel</button>                                        
+                                    <button onclick="intelMOTHERset(7)">GIGABYTE B365M DS3H LGA Intel</button>
+                                    <button onclick="intelMOTHERset(8)">MSI B360 GAMING PLUS LGA Intel</button>
+                                </div>
+                                <div id="amdMOTHER" class="qb">
+                                    <button onclick="amdMOTHERset(0)">ASUS ROG Strix X570-E AMD</button>
+                                    <button onclick="amdMOTHERset(1)">ASUS TUF Gaming X570-Plus AMD</button>
+                                    <button onclick="amdMOTHERset(2)">ASUS ROG STRIX B450-F AMD</button>
+                                    <button onclick="amdMOTHERset(3)">MSI B450 TOMAHAWK MAX AMD</button>
+                                    <button onclick="amdMOTHERset(4)">ASRock B450M PRO4 AMD</button>
+                                    <button onclick="amdMOTHERset(5)">GIGABYTE X570 UD AMD Ryzen</button>
+                                    <button onclick="amdMOTHERset(6)">ASRock X570 PHANTOM GAMING AMD</button>                                        
+                                    <button onclick="amdMOTHERset(7)">GIGABYTE B450M DS3H AMD</button>
+                                    <button onclick="amdMOTHERset(8)">MSI MPG X570 GAMING PLUS AMD</button>
+                                </div>
+                                <div id="bestMOTHER" class="qb">
+                                    <button onclick="intelMOTHERset(0)">GIGABYTE Z390 AORUS PRO WIFI LGA Intel</button>
+                                    <button onclick="amdMOTHERset(0)">ASUS ROG Strix X570-E AMD</button>
+                                    <button onclick="intelMOTHERset(1)">ASUS Prime Z390-A LGA Intel</button>
+                                    <button onclick="amdMOTHERset(1)">ASUS TUF Gaming X570-Plus AMD</button>
+                                    <button onclick="intelMOTHERset(2)">ASUS ROG Strix Z390-E Gaming LGA Intel</button>
+                                    <button onclick="amdMOTHERset(2)">ASUS ROG STRIX B450-F AMD</button>                                        
+                                    <button onclick="intelMOTHERset(3)">ASRock B365M Pro4 LGA Intel</button>
+                                    <button onclick="amdMOTHERset(3)">MSI B450 TOMAHAWK MAX AMD</button>
+                                    <button onclick="intelMOTHERset(4)">MSI PRO Z390-A PRO LGA Intel</button>
+                                </div>
+                                <div id="noneMOTHER" class="none">MOTHERBOARD : none</div>
+                            </div>
+                            <div class="storageQB, QB">
+                                <img id="imgSTORAGE" src="storageQBimage.jpg" height="100%" width="auto">
+                                <div id="QBstorage">
+                                    <ul class="QBul">
+                                        <li class="QBli"><button onclick="hddSTORAGE()">HDD</button></li>
+                                        <li class="QBli"><button onclick="ssdSTORAGE()">SSD</button></li>
+                                        <li class="QBli"><button onclick="bestSTORAGE()">Bestsellers</button></li>
+                                        <li class="QBli"><button onclick="noneSTORAGE()">None</button></li>
+                                    </ul>
+                                </div>
+                                <div id="hddSTORAGE" class="qb">
+                                    <button onclick="hddSTORAGEset(0)">Seagate FireCuda 2TB</button>
+                                    <button onclick="hddSTORAGEset(1)">WD Red 4TB NAS 5400 RPM</button>
+                                    <button onclick="hddSTORAGEset(2)">WD Elements 8TB USB 3.0</button>
+                                    <button onclick="hddSTORAGEset(3)">Seagate BarraCuda 2TB 7200 RPM</button>
+                                    <button onclick="hddSTORAGEset(4)">WD Blue 1TB 7200 RPM</button>
+                                    <button onclick="hddSTORAGEset(5)">Seagate BarraCuda 8TB 5400 RPM</button>
+                                    <button onclick="hddSTORAGEset(6)">WD 2TB Elements Portable USB 3.0</button>                                        
+                                    <button onclick="hddSTORAGEset(7)">Seagate BarraCuda 1TB 7200 RPM</button>
+                                    <button onclick="hddSTORAGEset(8)">Toshiba X300 5TB 7200 RPM</button>
+                                </div>
+                                <div id="ssdSTORAGE" class="qb">
+                                    <button onclick="ssdSTORAGEset(0)">Intel 660p Series 512GB QLC</button>
+                                    <button onclick="ssdSTORAGEset(1)">SAMSUNG 860 EVO 1TB MLC</button>
+                                    <button onclick="ssdSTORAGEset(2)">WD Blue 3D 1TB</button>
+                                    <button onclick="ssdSTORAGEset(3)">Crucial P1 1TB 3D</button>
+                                    <button onclick="ssdSTORAGEset(4)">WD Blue 3D 500GB</button>
+                                    <button onclick="ssdSTORAGEset(5)">Intel 660p Series 1TB QLC</button>
+                                    <button onclick="ssdSTORAGEset(6)">Sabrent Rocket 1TB</button>                                        
+                                    <button onclick="ssdSTORAGEset(7)">Intel 660p Series 2TB QLC</button>
+                                    <button onclick="ssdSTORAGEset(8)">HP EX900 500GB TLC</button>
+                                </div>
+                                <div id="bestSTORAGE" class="qb">
+                                    <button onclick="hddSTORAGEset(0)">Seagate FireCuda 2TB</button>
+                                    <button onclick="ssdSTORAGEset(0)">Intel 660p Series 512GB QLC</button>
+                                    <button onclick="hddSTORAGEset(1)">WD Red 4TB NAS 5400 RPM</button>
+                                    <button onclick="ssdSTORAGEset(1)">SAMSUNG 860 EVO 1TB MLC</button>
+                                    <button onclick="hddSTORAGEset(2)">WD Elements 8TB USB 3.0</button>
+                                    <button onclick="ssdSTORAGEset(2)">WD Blue 3D 1TB</button>                                        
+                                    <button onclick="hddSTORAGEset(3)">Seagate BarraCuda 2TB 7200 RPM</button>
+                                    <button onclick="ssdSTORAGEset(3)">Crucial P1 1TB 3D</button>
+                                    <button onclick="hddSTORAGEset(4)">WD Blue 1TB 7200 RPM</button>
+                                </div>
+                                <div id="noneSTORAGE" class="none">STORAGE : none</div>
+                            </div>
+                            <div class="caseQB, QB">
+                                <img id="imgCASE" src="caseQBimage.jpg" height="100%" width="auto">
+                                <div id="QBcase">
+                                    <ul class="QBul">
+                                        <li class="QBli"><button onclick="fullCASE()">Full ATX</button></li>
+                                        <li class="QBli"><button onclick="midCASE()">Mid ATX</button></li>
+                                        <li class="QBli"><button onclick="bestCASE()">Bestsellers</button></li>
+                                        <li class="QBli"><button onclick="noneCASE()">None</button></li>
+                                    </ul>
+                                </div>
+                                <div id="fullCASE" class="qb">
+                                    <button onclick="fullCASEset(0)">Corsair Obsidian Series 750D WW Black</button>
+                                    <button onclick="fullCASEset(1)">Thermaltake View 71 Snow Edition 4-Sided</button>
+                                    <button onclick="fullCASEset(2)">Thermaltake View 71 4-Sided Tempered Glass</button>
+                                    <button onclick="fullCASEset(3)">Corsair Obsidian Series 750D Airflow</button>
+                                    <button onclick="fullCASEset(4)">Fractal Design Define 7 XL Black Brushed</button>
+                                    <button onclick="fullCASEset(5)">COUGAR Panzer Evo RGB Black RGB LED</button>
+                                    <button onclick="fullCASEset(6)">DEEPCOOL Gamer Storm 550 Black</button>                                        
+                                    <button onclick="fullCASEset(7)">COUGAR Panzer Max Black</button>
+                                    <button onclick="fullCASEset(8)">Thermaltake Level 20 GT ARGB</button>
+                                </div>
+                                <div id="midCASE" class="qb">
+                                    <button onclick="midCASEset(0)">Fractal Design Meshify C White</button>
+                                    <button onclick="midCASEset(1)">CORSAIR Crystal 570X RGB Tempered Glass</button>
+                                    <button onclick="midCASEset(2)">Phanteks Eclipse P300 Black Steel Chassis</button>
+                                    <button onclick="midCASEset(3)">Cooler Master MasterCase H500M</button>
+                                    <button onclick="midCASEset(4)">DIYPC Vanguard-V6-RGB Black Dual USB3.0</button>
+                                    <button onclick="midCASEset(5)">Rosewill PRISM M</button>
+                                    <button onclick="midCASEset(6)">NZXT H510i - Compact</button>                                        
+                                    <button onclick="midCASEset(7)">Thermaltake Tempered Glass Power Cover</button>
+                                    <button onclick="midCASEset(8)">Fractal Design Meshify C High-Airflow</button>
+                                </div>
+                                <div id="bestCASE" class="qb">
+                                    <button onclick="fullCASEset(0)">Corsair Obsidian Series 750D WW Black</button>
+                                    <button onclick="midCASEset(0)">Fractal Design Meshify C White</button>
+                                    <button onclick="fullCASEset(1)">Thermaltake View 71 Snow Edition 4-Sided</button>
+                                    <button onclick="midCASEset(1)">CORSAIR Crystal 570X RGB Tempered Glass</button>
+                                    <button onclick="fullCASEset(2)">Thermaltake View 71 4-Sided Tempered Glass</button>
+                                    <button onclick="midCASEset(2)">Phanteks Eclipse P300 Black Steel Chassis</button>                                        
+                                    <button onclick="fullCASEset(3)">Corsair Obsidian Series 750D Airflow</button>
+                                    <button onclick="midCASEset(3)">Cooler Master MasterCase H500M</button>
+                                    <button onclick="fullCASEset(4)">Fractal Design Define 7 XL Black Brushed</button>
+                                </div>
+                                <div id="noneCASE" class="none">CASE : none</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="memoryQB, QB">
+                                <img id="imgMEMORY" src="memoryQBimage.jpg" height="100%" width="auto">
+                                <div id="QBmemory">
+                                    <ul class="QBul">
+                                        <li class="QBli"><button onclick="DDR4()">DDR4</button></li>
+                                        <li class="QBli"><button onclick="DDR3()">DDR3</button></li>
+                                        <li class="QBli"><button onclick="bestMEMORY()">Bestsellers</button></li>
+                                        <li class="QBli"><button onclick="noneMEMORY()">None</button></li>
+                                    </ul>
+                                </div>
+                                <div id="DDR4" class="qb">
+                                    <button onclick="DDR4set(0)">G.SKILL Ripjaws V (4 x 16GB) 3400</button>
+                                    <button onclick="DDR4set(1)">G.SKILL TridentZ (8 x 16GB) 3200</button>
+                                    <button onclick="DDR4set(2)">G.SKILL TridentZ (8 x 8GB) 3200</button>
+                                    <button onclick="DDR4set(3)">G.SKILL TridentZ  (8 x 8GB) 3600</button>
+                                    <button onclick="DDR4set(4)">CORSAIR Vengeance LPX (8 x 16GB) 3800</button>
+                                    <button onclick="DDR4set(5)">G.SKILL Sniper X (4 x 16GB) 3200</button>
+                                    <button onclick="DDR4set(6)">G.SKILL TridentZ (8 x 16GB) 3866</button>                                        
+                                    <button onclick="DDR4set(7)">Crucial (2 x 16GB) 2400 MHz</button>
+                                    <button onclick="DDR4set(8)">Ballistix (2 x 8GB) 2400MHz</button>
+                                </div>
+                                <div id="DDR3" class="qb">
+                                    <button onclick="DDR3set(0)">Centon R1333SO4096 4GB</button>
+                                    <button onclick="DDR3set(1)">V7 (2 x 4GB) 1600 MHz</button>
+                                    <button onclick="DDR3set(2)">Lenovo 8GB SDRAM</button>
+                                    <button onclick="DDR3set(3)">Ballistix Sport 4GB 1600</button>
+                                    <button onclick="DDR3set(4)">G.SKILL Ares (2 x 8GB) 1600</button>
+                                    <button onclick="DDR3set(5)">Visiontek 8GB SDRAM</button>
+                                    <button onclick="DDR3set(6)">AddOn 2GB 240-Pin 1333</button>                                        
+                                    <button onclick="DDR3set(7)">ADATA 8GB SO-DIMM 1600</button>
+                                    <button onclick="DDR3set(8)">Crucial 8GB 1600 MHz SODIMM</button>
+                                </div>
+                                <div id="bestMEMORY" class="qb">
+                                    <button onclick="DDR4set(0)">G.SKILL Ripjaws V (4 x 16GB) 3400</button>
+                                    <button onclick="DDR3set(0)">Centon R1333SO4096 4GB</button>
+                                    <button onclick="DDR4set(1)">G.SKILL TridentZ (8 x 16GB) 3200</button>
+                                    <button onclick="DDR3set(1)">V7 (2 x 4GB) 1600 MHz</button>
+                                    <button onclick="DDR4set(2)">G.SKILL TridentZ (8 x 8GB) 3200</button>
+                                    <button onclick="DDR3set(2)">Lenovo 8GB SDRAM</button>                                        
+                                    <button onclick="DDR4set(3)">G.SKILL TridentZ  (8 x 8GB) 3600</button>
+                                    <button onclick="DDR3set(3)">Ballistix Sport 4GB 1600</button>
+                                    <button onclick="DDR4set(4)">CORSAIR Vengeance LPX (8 x 16GB) 3800</button>
+                                </div>
+                                <div id="noneMEMORY" class="none">MEMORY : none</div>
+                            </div>
+                            <div class="coolerQB, QB">
+                                <img id="imgCOOLER" src="coolerQBimage.jpg" height="100%" width="auto">
+                                <div id="QBcooler">
+                                    <ul class="QBul">
+                                        <li class="QBli"><button onclick="airCOOLER()">CPU Coolers</button></li>
+                                        <li class="QBli"><button onclick="liquidCOOLER()">Liguid Cooling</button></li>
+                                        <li class="QBli"><button onclick="bestCOOLER()">Bestsellers</button></li>
+                                        <li class="QBli"><button onclick="noneCOOLER()">None</button></li>
+                                    </ul>
+                                </div>
+                                <div id="airCOOLER" class="qb">
+                                    <button onclick="airCOOLERset(0)">DEEPCOOL GAMMAXX 400</button>
+                                    <button onclick="airCOOLERset(1)">Cooler Master Hyper 212 RGB Black Edition</button>
+                                    <button onclick="airCOOLERset(2)">Noctua NH-D15 SSO2 D-Type Premium</button>
+                                    <button onclick="airCOOLERset(3)">Rosewill ROCC-16003 - High Performance</button>
+                                    <button onclick="airCOOLERset(4)">Rosewill RCX-Z300 92mm Ball</button>
+                                    <button onclick="airCOOLERset(5)">Cooler Master Hyper 212 Black Edition</button>
+                                    <button onclick="airCOOLERset(6)">Cooler Master Hyper</button>                                        
+                                    <button onclick="airCOOLERset(7)">Noctua NH-L9x65</button>
+                                    <button onclick="airCOOLERset(8)">be quiet! 250W TDP Dark Rock Pro</button>
+                                </div>
+                                <div id="liquidCOOLER" class="qb">
+                                    <button onclick="liquidCOOLERset(0)">Cooler Master MasterLiquid Lite ML240L RGB</button>
+                                    <button onclick="liquidCOOLERset(1)">Corsair Hydro Series H100i PRO Low Noise</button>
+                                    <button onclick="liquidCOOLERset(2)">Corsair Hydro Series, H115i PRO RGB</button>
+                                    <button onclick="liquidCOOLERset(3)">DEEPCOOL Castle 240EX, Addressable RGB</button>
+                                    <button onclick="liquidCOOLERset(4)">Corsair Hydro Series, H150i PRO RGB</button>
+                                    <button onclick="liquidCOOLERset(5)">Cooler Master MasterLiquid Lite ML120L RGB</button>
+                                    <button onclick="liquidCOOLERset(6)">Thermaltake Floe AIO Riing RGB</button>                                        
+                                    <button onclick="liquidCOOLERset(7)">Corsair Hydro Series H60</button>
+                                    <button onclick="liquidCOOLERset(8)">CORSAIR Hydro Series H115i RGB PLATINUM</button>
+                                </div>
+                                <div id="bestCOOLER" class="qb">
+                                    <button onclick="airCOOLERset(0)">DEEPCOOL GAMMAXX 400</button>
+                                    <button onclick="liquidCOOLERset(0)">Cooler Master MasterLiquid Lite ML240L RGB</button>
+                                    <button onclick="airCOOLERset(1)">Cooler Master Hyper 212 RGB Black Edition</button>
+                                    <button onclick="liquidCOOLERset(1)">Corsair Hydro Series H100i PRO Low Noise</button>
+                                    <button onclick="airCOOLERset(2)">Noctua NH-D15 SSO2 D-Type Premium</button>
+                                    <button onclick="liquidCOOLERset(2)">Corsair Hydro Series, H115i PRO RGB</button>                                        
+                                    <button onclick="airCOOLERset(3)">Rosewill ROCC-16003 - High Performance</button>
+                                    <button onclick="liquidCOOLERset(3)">DEEPCOOL Castle 240EX, Addressable RGB</button>
+                                    <button onclick="airCOOLERset(4)">Rosewill RCX-Z300 92mm Ball</button>
+                                </div>
+                                <div id="noneCOOLER" class="none">COOLER : none</div>
+                            </div>
+                            <div class="fansQB, QB">
+                                <img id="imgFAN" src="fanQBimage.jpg" height="100%" width="auto">
+                                <div id="QBfan">
+                                    <ul class="QBul">
+                                        <li class="QBli"><button onclick="caseFAN()">Case Fans</button></li>
+                                        <li class="QBli"><button onclick="ledFAN()">Led Fans</button></li>
+                                        <li class="QBli"><button onclick="bestFAN()">Bestsellers</button></li>
+                                        <li class="QBli"><button onclick="noneFAN()">None</button></li>
+                                    </ul>
+                                </div>
+                                <div id="caseFAN" class="qb">
+                                    <button onclick="caseFANset(0)">Rosewill RFA-120-K - 120mm</button>
+                                    <button onclick="caseFANset(1)">NF-F12 iPPC-3000 PWM Fan</button>
+                                    <button onclick="caseFANset(2)">Phanteks PH-F140SP_BK 140mm</button>
+                                    <button onclick="caseFANset(3)">Rosewill 80mm Computer Case Fan</button>
+                                    <button onclick="caseFANset(4)">ARCTIC F8 PWM Fluid Dynamic Bearing</button>
+                                    <button onclick="caseFANset(5)">Rosewill 140mm Hydro Dynamic Bearing</button>
+                                    <button onclick="caseFANset(6)">Vantec Stealth 120mm Double Ball Bearing</button>                                        
+                                    <button onclick="caseFANset(7)">Rosewill 120mm Silent Smoke</button>
+                                    <button onclick="caseFANset(8)">DEEPCOOL XFAN 80 Hydro Bearing</button>
+                                </div>
+                                <div id="ledFAN" class="qb">
+                                    <button onclick="ledFANset(0)">Corsair LL Series CO-9050091-WW LL120 RGB</button>
+                                    <button onclick="ledFANset(1)">Corsair LL Series CO-9050092-WW LL120 RGB</button>
+                                    <button onclick="ledFANset(2)">Cooler Master SickleFlow 120 - Sleeve Bearing</button>
+                                    <button onclick="ledFANset(3)">CORSAIR ML120 PRO RGB</button>
+                                    <button onclick="ledFANset(4)">Corsair LL Series CO-9050073-WW LL140 RGB</button>
+                                    <button onclick="ledFANset(5)">Corsair LL Series CO-9050074-WW LL140 RGB</button>
+                                    <button onclick="ledFANset(6)">CORSAIR ML140 PRO RGB</button>                                        
+                                    <button onclick="ledFANset(7)">Rosewill 120mm with Red LED</button>
+                                    <button onclick="ledFANset(8)">Rosewill 120mm True RGB LED</button>
+                                </div>
+                                <div id="bestFAN" class="qb">
+                                    <button onclick="caseFANset(0)">Rosewill RFA-120-K - 120mm</button>
+                                    <button onclick="ledFANset(0)">Corsair LL Series CO-9050091-WW LL120 RGB</button>
+                                    <button onclick="caseFANset(1)">NF-F12 iPPC-3000 PWM Fan</button>
+                                    <button onclick="ledFANset(1)">Corsair LL Series CO-9050092-WW LL120 RGB</button>
+                                    <button onclick="caseFANset(2)">Phanteks PH-F140SP_BK 140mm</button>
+                                    <button onclick="ledFANset(2)">Cooler Master SickleFlow 120 - Sleeve Bearing</button>                                        
+                                    <button onclick="caseFANset(3)">Rosewill 80mm Computer Case Fan</button>
+                                    <button onclick="ledFANset(3)">CORSAIR ML120 PRO RGB</button>
+                                    <button onclick="caseFANset(4)">ARCTIC F8 PWM Fluid Dynamic Bearing</button>
+                                </div>
+                                <div id="noneFAN" class="none">FAN : none</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="quickBuildResult">
+                        <div class="col-xs-6" id="QBresultLeft">
+                            <div>
+                                <div>CPU:</div>
+                                <div>Motherboard:</div>
+                                <div>Memory:</div>
+                                <div>Graphic Card:</div>
+                                <div>Storage:</div>
+                                <div>Power Supply:</div>
+                                <div>Case:</div>
+                                <div>Cooler:</div>
+                                <div>Fans:</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-1" id="QBresultPrice">
+                            <div id="QBcpuPrice">0</div>
+                            <div id="QBmotherPrice">0</div>
+                            <div id="QBmemoryPrice">0</div>
+                            <div id="QBgraphicPrice">0</div>
+                            <div id="QBstoragePrice">0</div>
+                            <div id="QBpowerPrice">0</div>
+                            <div id="QBcasePrice">0</div>
+                            <div id="QBcoolerPrice">0</div>
+                            <div id="QBfanPrice">0</div>
+                        </div>
+                        <div class="col-xs-5" id="QBresultRight">
+                            <div>$</div>
+                            <div>$</div>
+                            <div>$</div>
+                            <div>$</div>
+                            <div>$</div>
+                            <div>$</div>
+                            <div>$</div>
+                            <div>$</div>                                
+                            <div>$</div>
+                        </div>
+                    </div>
+                    <div class="row" id="QBpriceButton">
+                        <div class="col-xs-6"></div>
+                        <div class="col-xs-6">
+                            <button id="showPrice" onclick="showPrice()">Show Price</button>
+                            <span>Total price is - <span id="QBprice">0</span>$</span>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <br>
+            <div class="row" id="footer">
+                <div class="col-xs-4" id="footerCol1">
+                    <button onclick="social()"><img src="twitIcon.png" alt="twitter" width="auto" height="100%"></button>
+                    <button onclick="social()"><img src="vkIcon.png" alt="twitter" width="auto" height="100%"></button>
+                    <button onclick="social()"><img src="ytIcon.png" alt="twitter" width="auto" height="100%"></button>
+                    <button onclick="social()"><img src="instIcon.png" alt="twitter" width="auto" height="100%"></button>
+                    <button onclick="social()"><img src="telegIcon.png" alt="twitter" width="auto" height="100%"></button>
+                </div>
+                <div class="col-xs-4" id="footerCol2">
+                    Copyright 2020 - All rights are reserved
+                </div>
+                <div class="col-xs-4" id="footerCol3">
+                    <div>
+                        <div>store.PCraft@gmail.com</div>
+                        <span>+7 (7172) 89-89-89</span>
+                    </div>
+                </div>
+            </div>
+            <a class="reviewsLink" href="reviews.html"><img src="reviewsIcon.png" alt="reviews" width="100%" height="auto"></a>
+            <a class="contuctLink" href="contuct.html"><img src="contuctIcon.png" alt="contuct" width="100%" height="auto"></a>
+        </div>
+    </div>
+</body>
+</html>

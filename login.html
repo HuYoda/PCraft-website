@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+    <script src="social.js"></script>
+</head>
+<body>
+    <img src="bgImage.jpg">
+    <div class="mainDiv">
+        <div class="container">
+            <div class="row" id="header">
+                <div class="col-xs-4" id="headerCol1">
+                    <a class="logoLink" href="index.html"><img class="logo" src="logo.png" width="auto" height="100%"></a>
+                    <a class="titleLink" href="index.html"><span class="title"><span class="titleGray">P</span><span class="titleWhite">C</span><span class="titleGray">raft</span></span></a>
+                </div>
+                <div class="col-xs-4" id="headerCol2"></div>
+                <div class="col-xs-4" id="headerCol3">
+                </div>
+            </div>
+            <br>
+            <div class="row" id="navLinks">
+                <a href="index.html">Home</a>&nbsp;>&nbsp;
+                <a href="login.html">Log in / Register</a>
+            </div>
+            <br>
+            <div class="row" id="navigation">
+                <div class="col-xs-3" id="navigationCol1">
+                    <div class="navBar">
+                        <ul class="navUl">
+                            <li class="navLi"><span class="navHead">Learn our Privacy Policy&nbsp;&nbsp;<i class="glyphicon glyphicon-menu-down"></i></span></li>
+                            <li class="navLi"><a class="navLink" href="policy.html">Collecting and Using Your Personal Data</a></li>
+                            <li class="navLi"><a class="navLink" href="policy.html">Processing of Your Personal Data</a></li>
+                            <li class="navLi"><a class="navLink" href="policy.html">Children's Privacy</a></li>
+                            <li class="navLi"><a class="navLink" href="policy.html">Links to Other Websites</a></li>
+                            <li class="navLi"><a class="navLink" href="policy.html">Changes to Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-9" id="navigationCol2">  
+                    <div class="loginAndRegisterTitle">
+                        <button class="toLogin" onclick="toLogin()">Log In</button>
+                        &nbsp;&nbsp;or&nbsp;&nbsp;
+                        <button class="toRegister" onclick="toRegister()">Register</button>
+                    </div>
+                    <div class="loginAndRegister">
+                        <form>
+                            <div>
+                                <div class="formLegend"><legend>Log In</legend></div>
+                                <div><input type="text" placeholder="Username"></div>
+                                <div><input id="inputEmail" type="email" placeholder="Email"></div>
+                                <div><input type="password" placeholder="Password"></div>
+                                <div><input id="inputConfirm" type="password" placeholder="Confirm"></div>
+                                <div><input id="submitForm" type="submit" value="Log In"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+            <div class="row" id="footer">
+                <div class="col-xs-4" id="footerCol1">
+                    <button onclick="social()"><img src="twitIcon.png" alt="twitter" width="auto" height="100%"></button>
+                    <button onclick="social()"><img src="vkIcon.png" alt="twitter" width="auto" height="100%"></button>
+                    <button onclick="social()"><img src="ytIcon.png" alt="twitter" width="auto" height="100%"></button>
+                    <button onclick="social()"><img src="instIcon.png" alt="twitter" width="auto" height="100%"></button>
+                    <button onclick="social()"><img src="telegIcon.png" alt="twitter" width="auto" height="100%"></button>
+                </div>
+                <div class="col-xs-4" id="footerCol2">
+                    Copyright 2020 - All rights are reserved
+                </div>
+                <div class="col-xs-4" id="footerCol3">
+                    <div>
+                        <div>store.PCraft@gmail.com</div>
+                        <span>+7 (7172) 89-89-89</span>
+                    </div>
+                </div>
+            </div>
+            <a class="reviewsLink" href="reviews.html"><img src="reviewsIcon.png" alt="reviews" width="100%" height="auto"></a>
+            <a class="contuctLink" href="contuct.html"><img src="contuctIcon.png" alt="contuct" width="100%" height="auto"></a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,323 @@
+body{
+    background-color: rgb(192, 192, 192);
+}
+body > img, .mainDiv{
+    position: absolute; 
+    left: 0;
+}
+body > img{
+    width: 100%;
+    height: auto;
+    min-width: max-content;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+.mainDiv{
+    width: 100%;
+    height: 100%;
+    margin-top: 6%;
+}
+.container{
+    height: 100%;
+    position: relative;
+}
+.container > a{
+    width: 5%;
+    position: fixed;
+    background-color: rgb(216, 58, 58);
+    border: whitesmoke 2px solid;
+}
+.container > .reviewsLink{bottom: 1%; right: 1%;}
+.container > .contuctLink{bottom: 12%; right: 1%;}
+#header{
+    background-color: rgb(216, 58, 58);
+    padding: 0.5%;
+    height: 9%
+}
+#header > div{
+    height: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+#header button{
+    border: 1px solid rgb(82, 82, 82);
+    color: rgb(82, 82, 82);
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+#headerCol1{display: flex; justify-content: flex-start;}
+#headerCol2{display: flex; justify-content: center;}
+#headerCol3{display: flex; justify-content: flex-end;}
+#headerCol1 > a{
+    text-decoration: none;
+}
+.logoLink{
+    height: 100%;
+    width: auto;
+}
+.title{
+    width: 100%;
+    padding-left: 3%;
+}
+.titleGray, .titleWhite{
+    font-size: 300%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.titleGray{color: rgb(82, 82, 82);}
+.titleWhite{color: whitesmoke}
+#headerCol3 > button > a, #headerCol3 > button{
+    text-decoration: none;
+    color: rgb(82, 82, 82);
+}
+#navLinks{
+    background-color: rgb(216, 58, 58);
+    padding: 1%;
+    color: whitesmoke;
+}
+#navLinks a{
+    color: whitesmoke;
+}
+#navigation{
+    height: 54.8%;
+}
+#navigation > div{
+    padding: 0px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.navBar{
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+.navUl{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: whitesmoke;
+}
+.navHead{
+    display: block;
+    background-color: rgb(216, 58, 58);
+    color: whitesmoke;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+.navLi .navLink{
+    background-color: whitesmoke;
+    color: rgb(82, 82, 82);
+    padding: 8px 16px;
+    text-decoration: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+}
+.navLi .navLink:hover{
+    background-color: rgb(82, 82, 82);
+    color: whitesmoke;
+}
+#navigationCol2{
+    display: flex;
+    flex-direction: column;
+}
+.weWorkTitle{
+    margin-left: 3%;
+    background-color: rgb(216, 58, 58);
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 8px 16px;
+    width: 97%;
+}
+.weWorkContent{
+    margin-left: 3%;
+    padding: 3%;
+    width: 97%;
+    height: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+.weWorkContent > a{
+    width: 30%;
+    height: 80%;
+    text-decoration: none;
+}
+.weWork{
+    width: 100%;
+    height: 100%;
+}
+.weWork > div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: rgb(82, 82, 82);
+    font-weight: bold;
+}
+#quickBuild{height: 120%;}
+#quickBuild > div{
+    padding: 0px;
+    background-color: whitesmoke;
+    height: 100%;
+}
+#quickBuildTitle{
+    background-color: rgb(216, 58, 58);
+    color: whitesmoke;
+    padding: 8px 16px;
+    margin: 0;
+    font-weight: bold;
+}
+#quickBuildTitle > span{
+    float: right;
+    font-weight: 400;
+    font-size: 80%;
+}
+#quickBuildContent{
+    margin: 0;
+    height: 67%;
+    width: 100%;
+}
+#quickBuildContent > div{
+    padding: 0;
+    height: 100%;
+    width: 33.333%;
+    font-size: 90%;
+}
+.QB{
+    margin: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 94%;
+    height: 30.3%;
+    align-items: center;
+    background-color: white;
+    border: 2px solid rgb(82, 82, 82);
+}
+.QB > img{
+    border-right: 2px solid rgb(82, 82, 82);
+    padding: 2% 2%;
+}
+.QB > div{
+    width: 34.6%;
+}
+.QBul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: white;
+}
+.QBli{
+    display: block;
+    color: rgb(82, 82, 82);
+    text-decoration: none;
+}
+.QBli > button{
+    border: none;
+    background-color: white;
+    padding: 5% 10%;
+    width: 100%;
+    height: 100%;
+}
+.QBli > button:hover{
+    background-color: rgb(82, 82, 82);
+    color: whitesmoke;
+}
+#quickBuildResult{
+    margin: 0;
+}
+#quickBuildResult > div{
+    padding: 0;
+    color: rgb(82, 82, 82);
+}
+#QBresultLeft{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10%;
+    font-weight: bold;
+}
+#QBresultLeft > div{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+#QBresultPrice{
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+}
+#QBresultRight{
+    font-style: italic;
+}
+#QBpriceButton{
+    margin: 0;
+}
+#QBpriceButton > div{
+    padding: 0;
+    padding-left: 0.5%;
+    padding-bottom: 1%;
+    color: rgb(82, 82, 82);
+    display: flex;
+    flex-direction: column;
+}
+#showPrice{
+    width: max-content;
+    background-color: whitesmoke;
+    border: 1px solid rgb(82, 82, 82);
+    color: rgb(82, 82, 82);
+    border-radius: 5px;
+}
+#QBpriceButton > div > span{
+    margin-left: -14%;
+    font-weight: bold;
+    font-style: italic;
+}
+.qb button{
+    background-color: whitesmoke;
+    color: rgb(82, 82, 82);
+    border: none;
+    width: 33.3%;
+    height: 33.3%;
+}
+.qb button:hover{
+    background-color: rgb(82, 82, 82);
+    color: whitesmoke;
+}
+.qb, .none{display: none;}
+#footer{
+    height: 9%;
+    padding: 0.5%;
+    background-color: rgb(216, 58, 58);
+    color: whitesmoke;
+}
+#footer > div{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#footerCol1{display: flex; justify-content: flex-start;}
+#footerCol2{display: flex; justify-content: center;}
+#footerCol3{display: flex; justify-content: flex-end;}
+#footer button{
+    height: 100%;
+    width: fit-content;
+    border: none;
+    background-color: transparent;
+}
+#footerCol1 button > img{
+    background-color: whitesmoke;
+    border: 1px whitesmoke solid;
+    border-radius: 2px;
+}
+#footerCol3 > div{
+    display: flex;
+    flex-direction: column;
+}
+#footerCol3 > div > span{
+    font-style: italic;
+}
